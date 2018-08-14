@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/blog/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/blog/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="前端程序猿的学习之旅，分享学习路上的坑。努力努力再努力！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Safran Blog">
+<meta property="og:url" content="http://blog.vmccc.cn/page/2/index.html">
+<meta property="og:site_name" content="Safran Blog">
+<meta property="og:description" content="前端程序猿的学习之旅，分享学习路上的坑。努力努力再努力！">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Safran Blog">
+<meta name="twitter:description" content="前端程序猿的学习之旅，分享学习路上的坑。努力努力再努力！">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blog/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.vmccc.cn/page/2/"/>
+
+
+
+
+
+  <title>Safran Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+    <!-- 顶部github -->
+   <a href="https://github.com/safranyu" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+   <!-- end顶部github -->
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/blog/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Safran Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/blog/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/blog/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/blog/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.vmccc.cn/blog/post/c4200868/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Safran">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/find.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Safran Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/post/c4200868/" itemprop="url">Git问题! [rejected] master -> master (fetch first)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-10T17:20:06+08:00">
+                2017-03-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在工作中出现这个问题，中文的意思是<code>[拒绝]主人 - &gt;主人（抢先）</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">! [rejected] master -&gt; master (fetch first)</span><br></pre></td></tr></table></figure></p>
+<p>答案就在那里，git告诉你先取。<br>可能其他人已经推动掌握，你的承诺落后了。因此，您必须获取，合并变更集，然后您将能够再次推送。<br>如果你不这样做（或者更糟糕的是，如果你通过使用该<code>--force</code>选项强制它），你可能会搞乱提交历史记录。<br>编辑：我进一步了解最后一点，因为这里的一个人刚刚给出了使用该<code>--force</code>选项的非常糟糕的建议。<br>由于git是一个DVCS，理想情况下，许多其他开发人员正在使用相同的存储库（或它的一个分支）处理与您相同的项目。如果你用变更集强行覆盖，你的存储库将与其他人不匹配，因为“你重写了历史”。你会让其他人不高兴，存储库也会受到影响。可能世界上的一只小猫也会哭。<br>TL; DR<br>    1.如果要解决，请先获取（然后合并）。<br>    2.如果您想破解，请使用该<code>--force</code>选项。<br>但是你要求前者。永远都要去1），即使你总是自己使用git，因为这是一个很好的做法。</p>
+<p>参考<a href="https://stackoverflow.com/questions/28429819/rejected-master-master-fetch-first" target="_blank" rel="noopener">https://stackoverflow.com/questions/28429819/rejected-master-master-fetch-first</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.vmccc.cn/blog/post/ed2bb89d/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Safran">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/find.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Safran Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/post/ed2bb89d/" itemprop="url">linux清空文件夹命令问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-05T20:50:22+08:00">
+                2017-03-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>1.linux删除命令是rm。<br>2.命令为rm -rf /文件夹/文件名。<br>3.例如：rm -f /a/b/d.log。删除在a文件夹中的b文件夹中的d.log这个文件。rm -rf /a/b。删除a文件夹中的b这个文件夹及b中的所有文件。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.vmccc.cn/blog/post/ea97c1ba/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Safran">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/find.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Safran Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/post/ea97c1ba/" itemprop="url">discuz添加管理员，找回管理员方法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-02T23:47:45+08:00">
+                2017-03-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/Discuz/" itemprop="url" rel="index">
+                    <span itemprop="name">Discuz</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="增加创始人方法："><a href="#增加创始人方法：" class="headerlink" title="增加创始人方法："></a>增加创始人方法：</h2><p>第一步：打开现在创始人的后台，将你所需要增加的创始人设置为管理员，并且给予后台副站长权限，这两部一定要做到位，先把这两步做完之后再做下面的！</p>
+<p>具体设置管理员和给予后台副站长权限请查看教程：</p>
+<p>第二步：用FTP下载文件 config/config_global.php  然后打开找到如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$_config[&apos;admincp&apos;][&apos;founder&apos;] = &apos;1&apos;;</span><br></pre></td></tr></table></figure></p>
+<p>把这个“1”在后面添加你小所使用的UID，比如：你所需要增加的创始人帐号UID是200，则改为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$_config[&apos;admincp&apos;][&apos;founder&apos;] = &apos;1,200&apos;;</span><br></pre></td></tr></table></figure></p>
+<p>这里的“200”是由所增加的创始人的UID所决定</p>
+<p>第三步：</p>
+<p>保存并覆盖原文件！后台更新缓存。然后用新增的创始人登录并登陆后台就会看到拥有了创始人权限！</p>
+<p>修改创始人方法：</p>
+<p>上半部教程已经讲解了增加创始人，现在如果需要删除或修改初始创始人则需要把上半部教程也做好后进行下面的！</p>
+<p>现在你的网站已经拥有两个创始人了，修改的话则如下操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$_config[&apos;admincp&apos;][&apos;founder&apos;] = &apos;1,200&apos;;</span><br></pre></td></tr></table></figure></p>
+<p>把这个“1”改成你所需要修改的帐号，且你所需要修改的帐号必须保证拥有管理员和副站长权限。</p>
+<p>删除初始创始人的话，则需要把“1,”删除，别忘了还有个小逗号！然后进入你现在的创始人后台将UID=1的这个帐号的管理员权限取消！</p>
+<p>设置完毕</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.vmccc.cn/blog/post/be11ad85/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Safran">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/find.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Safran Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/post/be11ad85/" itemprop="url">discuz论坛模板文件目录</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-01T23:08:02+08:00">
+                2017-03-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/Discuz/" itemprop="url" rel="index">
+                    <span itemprop="name">Discuz</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="公共模板文件夹-template-default-common"><a href="#公共模板文件夹-template-default-common" class="headerlink" title="公共模板文件夹 ./template/default/common/"></a>公共模板文件夹 ./template/default/common/</h2><table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>common.css</td>
+<td>公共CSS文件</td>
+</tr>
+<tr>
+<td>faq.htm</td>
+<td>帮助模板文件</td>
+</tr>
+<tr>
+<td>footer.htm</td>
+<td>系统总底部模板</td>
+</tr>
+<tr>
+<td>footer_ajax.htm</td>
+<td>ajax模式是使用到的系统总底部模板，ajax模式大部分为浮动框登录、注册、发帖等。</td>
+</tr>
+<tr>
+<td>forum_calendar.css</td>
+<td>广场社区使用到的日历日期样式</td>
+</tr>
+<tr>
+<td>forum_moderator.css</td>
+<td>版主管理面板样式</td>
+</tr>
+<tr>
+<td>header.htm</td>
+<td>系统总头显示内容文件</td>
+</tr>
+<tr>
+<td>header_common.htm</td>
+<td>系统总头公共标签文件</td>
+</tr>
+<tr>
+<td>header_ajax.htm</td>
+<td>ajax模式时使用到的系统总头部文件</td>
+</tr>
+<tr>
+<td>header_diy.htm</td>
+<td>DIY面板模板文件</td>
+</tr>
+<tr>
+<td>invite.htm</td>
+<td>邀请好友模板文件</td>
+</tr>
+<tr>
+<td>module.css</td>
+<td>模块样式文件，用于模块的拆分并生成相应的CSS样式。</td>
+</tr>
+<tr>
+<td>preview.htm</td>
+<td>预览的模板文件</td>
+</tr>
+<tr>
+<td>showmessage.htm</td>
+<td>系统提示信息模板文件</td>
+</tr>
+<tr>
+<td>userabout.htm</td>
+<td>我的中心面板模板文件</td>
+</tr>
+<tr>
+<td>widthauto.css</td>
+<td>宽屏模式追加的css</td>
+</tr>
+</tbody>
+</table>
+<h2 id="论坛模板文件夹-template-default-forum"><a href="#论坛模板文件夹-template-default-forum" class="headerlink" title="论坛模板文件夹 ./template/default/forum/"></a>论坛模板文件夹 ./template/default/forum/</h2><table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>activity_applylist.htm</td>
+<td>活动列表模板文件</td>
+</tr>
+<tr>
+<td>activity_export.htm</td>
+<td>活动资料内容模板文件</td>
+</tr>
+<tr>
+<td>announcement.htm</td>
+<td>广场公告模板文件</td>
+</tr>
+<tr>
+<td>attachpay.htm</td>
+<td>附件金币积分支付模板文件</td>
+</tr>
+<tr>
+<td>attachpay_view.htm</td>
+<td>附件金币积分支付查看模板文件</td>
+</tr>
+<tr>
+<td>ajax_attachlist.htm</td>
+<td>ajax获取附件列表模板文件</td>
+</tr>
+<tr>
+<td>collection_add.htm</td>
+<td>淘帖创建淘专辑页面模板</td>
+</tr>
+<tr>
+<td>collection_all.htm</td>
+<td>淘帖所有专辑页面</td>
+</tr>
+<tr>
+<td>collection_comment.htm</td>
+<td>淘帖专辑评论列表页</td>
+</tr>
+<tr>
+<td>collection_mycollection.htm</td>
+<td>淘帖我所创建专辑</td>
+</tr>
+<tr>
+<td>collection_index.htm</td>
+<td>淘帖首页推荐专辑</td>
+</tr>
+<tr>
+<td>collection_nav.htm</td>
+<td>淘帖面包屑下淘帖导航部分</td>
+</tr>
+<tr>
+<td>collection_view.htm</td>
+<td>淘帖具体专辑页面</td>
+</tr>
+<tr>
+<td>comment.htm</td>
+<td>评论模板文件</td>
+</tr>
+<tr>
+<td>comment_more.htm</td>
+<td>更多评论模板文件</td>
+</tr>
+<tr>
+<td>debate_umpire.htm</td>
+<td>辩论模板文件</td>
+</tr>
+<tr>
+<td>discuz.htm</td>
+<td>论坛首页模板文件</td>
+</tr>
+<tr>
+<td>forumdisplay.htm</td>
+<td>论坛版块主题列表总模板文件</td>
+</tr>
+<tr>
+<td>forumdisplay_list.htm</td>
+<td>论坛版块具体主题列表模板文件</td>
+</tr>
+<tr>
+<td>forumdisplay_passwd.htm</td>
+<td>论坛需要密码访问的版块模板文件</td>
+</tr>
+<tr>
+<td>forumdisplay_subforum.htm</td>
+<td>论坛子版块列表模板文件</td>
+</tr>
+<tr>
+<td>index_navbar.htm</td>
+<td>邀请模板文件</td>
+</tr>
+<tr>
+<td>modcp.htm</td>
+<td>管理面板模板文件</td>
+</tr>
+<tr>
+<td>pay.htm</td>
+<td>支付页面模板文件</td>
+</tr>
+<tr>
+<td>pay_view.htm</td>
+<td>支付结果查看模板文件</td>
+</tr>
+<tr>
+<td>post.htm</td>
+<td>发帖模板总文件</td>
+</tr>
+<tr>
+<td>post_activity.htm</td>
+<td>活动发布页面模板文件</td>
+</tr>
+<tr>
+<td>post_debate.htm</td>
+<td>辩论发布模板文件</td>
+</tr>
+<tr>
+<td>post_poll.htm</td>
+<td>投票贴发布模板文件</td>
+</tr>
+<tr>
+<td>post_reward.htm</td>
+<td>悬赏帖发布模板文件</td>
+</tr>
+<tr>
+<td>post_sortoption.htm</td>
+<td>主题分类选择模板文件</td>
+</tr>
+<tr>
+<td>post_trade.htm</td>
+<td>交易帖发布模板文件</td>
+</tr>
+<tr>
+<td>rate.htm</td>
+<td>主题评分模板文件</td>
+</tr>
+<tr>
+<td>rate_view.htm</td>
+<td>主题评分查看模板文件</td>
+</tr>
+<tr>
+<td>recommend.htm</td>
+<td>主题推荐模板文件</td>
+</tr>
+<tr>
+<td>trade.htm</td>
+<td>商品交易主题模板文件</td>
+</tr>
+<tr>
+<td>trade_displayorder.htm</td>
+<td>商品排序模板文件</td>
+</tr>
+<tr>
+<td>trade_info.htm</td>
+<td>商品交易详细资料模板文件</td>
+</tr>
+<tr>
+<td>trade_view.htm</td>
+<td>商品交易浏览页面模板文件</td>
+</tr>
+<tr>
+<td>viewthread.htm</td>
+<td>看帖页面模板文件</td>
+</tr>
+<tr>
+<td>viewthread_activity.htm</td>
+<td>查看活动页面模板文件</td>
+</tr>
+<tr>
+<td>viewthread_debate.htm</td>
+<td>查看辩论页面模板文件</td>
+</tr>
+<tr>
+<td>viewthread_fastpost.htm</td>
+<td>快速回复模板文件</td>
+</tr>
+<tr>
+<td>viewthread_from_node.htm</td>
+<td>特殊主题回复模板文件</td>
+</tr>
+<tr>
+<td>viewthread_mod.htm</td>
+<td>主题操作记录模板文件</td>
+</tr>
+<tr>
+<td>viewthread_node.htm</td>
+<td>复节主体内容模板文件</td>
+</tr>
+<tr>
+<td>viewthread_node_body.htm</td>
+<td>主题回复节点模板文件</td>
+</tr>
+<tr>
+<td>viewthread_pay.htm</td>
+<td>主题支付模板文件</td>
+</tr>
+<tr>
+<td>viewthread_poll.htm</td>
+<td>投票主题查看模板文件</td>
+</tr>
+<tr>
+<td>viewthread_poll_voter.htm</td>
+<td>投票主题参与者查看模板文件</td>
+</tr>
+<tr>
+<td>viewthread_reward.htm</td>
+<td>悬赏主题查看模板文件</td>
+</tr>
+<tr>
+<td>viewthread_trade.htm</td>
+<td>查看交易主题模板文件</td>
+</tr>
+</tbody>
+</table>
+<h2 id="群组模板文件夹-template-default-group"><a href="#群组模板文件夹-template-default-group" class="headerlink" title="群组模板文件夹 ./template/default/group/"></a>群组模板文件夹 ./template/default/group/</h2><table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>group.htm</td>
+<td>浏览群组时的模板文件</td>
+</tr>
+<tr>
+<td>group_create.htm</td>
+<td>群组创建时使用到的模板文件</td>
+</tr>
+<tr>
+<td>group_index.htm</td>
+<td>浏览群组时首页内容模板文件</td>
+</tr>
+<tr>
+<td>group_invite.htm</td>
+<td>邀请参与群组的模板文件</td>
+</tr>
+<tr>
+<td>group_list.htm</td>
+<td>群组列表文件</td>
+</tr>
+<tr>
+<td>group_manage.htm</td>
+<td>管理群组的模板文件</td>
+</tr>
+<tr>
+<td>group_memberlist.htm</td>
+<td>群组中参与用户的列表文件</td>
+</tr>
+<tr>
+<td>group_right.htm</td>
+<td>群组右侧边栏</td>
+</tr>
+<tr>
+<td>index.htm</td>
+<td>群组首页模板文件</td>
+</tr>
+</tbody>
+</table>
+<h2 id="空间家园模板文件夹-template-default-home"><a href="#空间家园模板文件夹-template-default-home" class="headerlink" title="空间家园模板文件夹 ./template/default/home/"></a>空间家园模板文件夹 ./template/default/home/</h2><table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>invite.htm</td>
+<td>空间邀请页面</td>
+</tr>
+<tr>
+<td>magic_call.htm</td>
+<td>通知好友魔法道具模板文件</td>
+</tr>
+<tr>
+<td>magic_doodle.htm</td>
+<td>涂鸦魔法道具模板文件</td>
+</tr>
+<tr>
+<td>network.css</td>
+<td>随便看看页CSS样式文件</td>
+</tr>
+<tr>
+<td>space_album_list.htm</td>
+<td>空间相册列表页面模板文件</td>
+</tr>
+<tr>
+<td>space_album_pic.htm</td>
+<td>空间相册图片模板文件</td>
+</tr>
+<tr>
+<td>space_album_view.htm</td>
+<td>空间相册浏览模板文件</td>
+</tr>
+<tr>
+<td>space_blog_list.htm</td>
+<td>空间日志列表模板文件</td>
+</tr>
+<tr>
+<td>space_blog_view.htm</td>
+<td>空间日志浏览模板文件</td>
+</tr>
+<tr>
+<td>space_click.htm</td>
+<td>表态模板文件</td>
+</tr>
+<tr>
+<td>space_comment_li.htm</td>
+<td>评论模板文件</td>
+</tr>
+<tr>
+<td>space_debate.htm</td>
+<td>辩论模板文件</td>
+</tr>
+<tr>
+<td>space_diy.htm</td>
+<td>空间DIY模板文件</td>
+</tr>
+<tr>
+<td>space_doing.htm</td>
+<td>心情记录模板文件</td>
+</tr>
+<tr>
+<td>space_doing_form.htm</td>
+<td>心情记录发送的模板文件</td>
+</tr>
+<tr>
+<td>space_doing_li.htm</td>
+<td>心情记录的列表模板文件</td>
+</tr>
+<tr>
+<td>space_favorite.htm</td>
+<td>空间收藏模板文件</td>
+</tr>
+<tr>
+<td>space_feed_li.htm</td>
+<td>feed事件列表模板文件</td>
+</tr>
+<tr>
+<td>space_footer.htm</td>
+<td>空间底部模板文件</td>
+</tr>
+<tr>
+<td>space_friend.htm</td>
+<td>空间好友模板文件</td>
+</tr>
+<tr>
+<td>space_group.htm</td>
+<td>空间群组模板文件</td>
+</tr>
+<tr>
+<td>space_header.htm</td>
+<td>空间头部模板文件</td>
+</tr>
+<tr>
+<td>space_home.htm</td>
+<td>空间home页模板文件</td>
+</tr>
+<tr>
+<td>space_index.css</td>
+<td>个人空间首页CSS样式文件</td>
+</tr>
+<tr>
+<td>space_index.htm</td>
+<td>个人空间首页模板文件</td>
+</tr>
+<tr>
+<td>space_list.htm</td>
+<td>空间列表页模板文件</td>
+</tr>
+<tr>
+<td>space_magic.htm</td>
+<td>空间魔法道具模板文件</td>
+</tr>
+<tr>
+<td>space_magic_mybox.htm</td>
+<td>本人所拥有的魔法道具模板文件</td>
+</tr>
+<tr>
+<td>space_magic_shop.htm</td>
+<td>魔法道具商城模板文件</td>
+</tr>
+<tr>
+<td>space_medal.htm</td>
+<td>空间勋章模板文件</td>
+</tr>
+<tr>
+<td>space_menu.htm</td>
+<td>空间菜单项模板文件</td>
+</tr>
+<tr>
+<td>space_notice.htm</td>
+<td>空间公告模板文件</td>
+</tr>
+<tr>
+<td>space_pm.htm</td>
+<td>空间短消息模板文件</td>
+</tr>
+<tr>
+<td>space_poll.htm</td>
+<td>空间投票模板文件</td>
+</tr>
+<tr>
+<td>space_profile.htm</td>
+<td>空间用户资料页模板文件</td>
+</tr>
+<tr>
+<td>space_share_form.htm</td>
+<td>空间分享来源模板文件</td>
+</tr>
+<tr>
+<td>space_share_li.htm</td>
+<td>空间分享模板文件</td>
+</tr>
+<tr>
+<td>space_share_list.htm</td>
+<td>空间分享列表模板文件</td>
+</tr>
+<tr>
+<td>space_share_view.htm</td>
+<td>空间分享查看模板文件</td>
+</tr>
+<tr>
+<td>space_thread.htm</td>
+<td>空间的主题帖模板文件</td>
+</tr>
+<tr>
+<td>space_top.htm</td>
+<td>空间头部模板文件</td>
+</tr>
+<tr>
+<td>space_trade.htm</td>
+<td>空间商品交易主题模板文件</td>
+</tr>
+<tr>
+<td>space_userabout.htm</td>
+<td>空间用户面板模板文件</td>
+</tr>
+<tr>
+<td>space_videophoto.htm</td>
+<td>视频相册模板文件</td>
+</tr>
+<tr>
+<td>space_wall.htm</td>
+<td>个人空间留言板</td>
+</tr>
+<tr>
+<td>spacecp_click.htm</td>
+<td>空间表态页模板文件</td>
+</tr>
+<tr>
+<td>spacecp_search.htm</td>
+<td>空间搜索页模板文件</td>
+</tr>
+<tr>
+<td>spacecp_share.htm</td>
+<td>空间分享管理页模板文件</td>
+</tr>
+<tr>
+<td>spacecp_space.htm</td>
+<td>空间管理页模板文件</td>
+</tr>
+<tr>
+<td>spacecp_userapp.htm</td>
+<td>用户应用页模板文件</td>
+</tr>
+</tbody>
+</table>
+<h2 id="会员模板文件夹-template-default-member"><a href="#会员模板文件夹-template-default-member" class="headerlink" title="会员模板文件夹 ./template/default/member/"></a>会员模板文件夹 ./template/default/member/</h2><table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>getpasswd.htm</td>
+<td>找回密码模板文件</td>
+</tr>
+<tr>
+<td>groupexpiry.htm</td>
+<td>用户组期限模板文件</td>
+</tr>
+<tr>
+<td>login.htm</td>
+<td>用户登录模板文件</td>
+</tr>
+<tr>
+<td>login_simple.htm</td>
+<td>用户登录模块文件</td>
+</tr>
+<tr>
+<td>register.htm</td>
+<td>用户注册模板文件</td>
+</tr>
+</tbody>
+</table>
+<h2 id="首页模板文件夹-template-default-portal"><a href="#首页模板文件夹-template-default-portal" class="headerlink" title="首页模板文件夹 ./template/default/portal/"></a>首页模板文件夹 ./template/default/portal/</h2><table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>comment.htm</td>
+<td>评论页面模板文件</td>
+</tr>
+<tr>
+<td>comment_li.htm</td>
+<td>评论操作模板文件</td>
+</tr>
+<tr>
+<td>index.htm</td>
+<td>门户首页模板文件</td>
+</tr>
+<tr>
+<td>list.htm</td>
+<td>门户新闻列表页面</td>
+</tr>
+<tr>
+<td>portal_topic_content.htm</td>
+<td>门户专题页面模板，如果添加新专题请创建portal_topic_xxx.htm的页面，即可在专题创建时自动的看到。</td>
+</tr>
+<tr>
+<td>portalcp_article.htm</td>
+<td>门户文章管理页面</td>
+</tr>
+<tr>
+<td>portalcp_block.htm</td>
+<td>门户模块页面</td>
+</tr>
+<tr>
+<td>portalcp_category.htm</td>
+<td>门户分类页面</td>
+</tr>
+<tr>
+<td>portalcp_comment.htm</td>
+<td>门户管理评论操作模板文件</td>
+</tr>
+<tr>
+<td>portalcp_diy.htm</td>
+<td>门户DIY模板文件</td>
+</tr>
+<tr>
+<td>portalcp_index.htm</td>
+<td>门户管理首页模板文件</td>
+</tr>
+<tr>
+<td>portalcp_portalblock.htm</td>
+<td>门户管理模块模板文件</td>
+</tr>
+<tr>
+<td>portalcp_topic.htm</td>
+<td>门户管理话题模板文件</td>
+</tr>
+<tr>
+<td>topic_footer.htm</td>
+<td>话题底部模板</td>
+</tr>
+<tr>
+<td>topic_head.htm</td>
+<td>话题顶部模板</td>
+</tr>
+<tr>
+<td>view.htm</td>
+<td>查看页面</td>
+</tr>
+</tbody>
+</table>
+<h2 id="搜索结果模板文件夹-template-default-search"><a href="#搜索结果模板文件夹-template-default-search" class="headerlink" title="搜索结果模板文件夹 ./template/default/search/"></a>搜索结果模板文件夹 ./template/default/search/</h2><table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>album.htm</td>
+<td>搜索相册结果</td>
+</tr>
+<tr>
+<td>album_list.htm</td>
+<td>搜索相册列表结果</td>
+</tr>
+<tr>
+<td>blog.htm</td>
+<td>搜索日志结果</td>
+</tr>
+<tr>
+<td>blog_list.htm</td>
+<td>搜索日志列表结果</td>
+</tr>
+<tr>
+<td>footer.htm</td>
+<td>页面底部</td>
+</tr>
+<tr>
+<td>forum.htm</td>
+<td>论坛搜索页</td>
+</tr>
+<tr>
+<td>group.htm</td>
+<td>群组搜索结果页面</td>
+</tr>
+<tr>
+<td>group_list.htm</td>
+<td>群组搜索结果列表页面</td>
+</tr>
+<tr>
+<td>header.htm</td>
+<td>页面头部</td>
+</tr>
+<tr>
+<td>portal.htm</td>
+<td>门户搜索结果</td>
+</tr>
+<tr>
+<td>portal_list.htm</td>
+<td>门户搜索结果列表页面</td>
+</tr>
+<tr>
+<td>sortoption.htm</td>
+<td>分类信息页面</td>
+</tr>
+<tr>
+<td>thread_list.htm</td>
+<td>主题列表页面</td>
+</tr>
+<tr>
+<td>trade.htm</td>
+<td>商品页面</td>
+</tr>
+</tbody>
+</table>
+<h2 id="会员应用模块模板文件夹-template-default-userapp"><a href="#会员应用模块模板文件夹-template-default-userapp" class="headerlink" title="会员应用模块模板文件夹 ./template/default/userapp/"></a>会员应用模块模板文件夹 ./template/default/userapp/</h2><table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userapp_app.htm</td>
+<td>用户应用</td>
+</tr>
+<tr>
+<td>userapp_index.htm</td>
+<td>应用频道首页</td>
+</tr>
+<tr>
+<td>userapp_manage.htm</td>
+<td>应用管理</td>
+</tr>
+<tr>
+<td>userapp_menu_list.htm</td>
+<td>应用菜单列表</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.vmccc.cn/blog/post/7c96e56d/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Safran">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/find.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Safran Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/post/7c96e56d/" itemprop="url">python跳一跳辅助学习</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-20T15:59:40+08:00">
+                2017-02-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="微信跳一跳辅助工具"><a href="#微信跳一跳辅助工具" class="headerlink" title="微信跳一跳辅助工具"></a>微信跳一跳辅助工具</h2><p>###准备工具</p>
+<ul>
+<li>adb驱动</li>
+<li>安卓手机</li>
+<li>打开手机的调试模式</li>
+<li>usb接好手机和电脑</li>
+</ul>
+<p>PyCharm：全宇宙唯一一款专门用于Python开发IDE工具</p>
+<p>###实现原理：</p>
+<ul>
+<li>获取手机的实时的截图</li>
+<li>点击起始位置和落地位置</li>
+<li>计算两个点的距离</li>
+<li>计算按压时间</li>
+<li>发送按压指令</li>
+<li>重新刷新手机截图</li>
+</ul>
+<p>###实现代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line">import PIL,numpy</span><br><span class="line">import  matplotlib.pylab as plt</span><br><span class="line">from matplotlib.animation import FuncAnimation</span><br><span class="line">import time</span><br><span class="line">need_update = True</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def get_screen_image():</span><br><span class="line">    os.system(&apos;adb shell screencap -p /sdcard/screen.png&apos;)#获取当前界面的手机截图</span><br><span class="line">    os.system(&apos;adb pull /sdcard/screen.png&apos;)#下载当前截图到电脑当前文件夹</span><br><span class="line">    return numpy.array(PIL.Image.open(&apos;screen.png&apos;)) #打开当前文件下的图片</span><br><span class="line"></span><br><span class="line">def jump_to_next(point1,point2):#计算弦的长度</span><br><span class="line">    x1, y1 = point1; x2, y2 = point2</span><br><span class="line">    distance = ((x2-x1)**2 + (y2-y1)**2)**0.5</span><br><span class="line">    os.system(&apos;adb shell input swipe 340 490 340 490 &#123;&#125;&apos;.format(int(distance*1)))</span><br><span class="line">    #手机的单击位置，0 0 0 0 0 ，x轴y轴滑动后的xy轴单击时间</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def on_calck(event, coor=[]):#绑定鼠标的单击事件[(x,y)(x2,y2)],</span><br><span class="line">    global need_update</span><br><span class="line">    coor.append((event.xdata, event.ydata))</span><br><span class="line">    if len(coor) == 2:</span><br><span class="line">        jump_to_next(coor.pop(), coor.pop())</span><br><span class="line">    need_update = True</span><br><span class="line"></span><br><span class="line">def update_screen(frame):#更新图片/从画图片</span><br><span class="line">    global need_update</span><br><span class="line">    if need_update:</span><br><span class="line">        time.sleep(1)</span><br><span class="line">        axes_image.set_array(get_screen_image())</span><br><span class="line">        need_update = False</span><br><span class="line">    return axes_image,</span><br><span class="line"></span><br><span class="line">figure = plt.figure() #创建一个空白的图片对象、创建一张图片</span><br><span class="line">axes_image = plt.imshow(get_screen_image(), animated=True)#把获取的图片画在坐标轴上</span><br><span class="line">figure.canvas.mpl_connect(&apos;button_press_event&apos;, on_calck)</span><br><span class="line">ani = FuncAnimation(figure, update_screen, interval=50, blit=True)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure></p>
+<p>参考文献：<a href="https://github.com/wangshub/wechat_jump_game" target="_blank" rel="noopener">https://github.com/wangshub/wechat_jump_game</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.vmccc.cn/blog/post/5f9a206b/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Safran">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/find.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Safran Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/post/5f9a206b/" itemprop="url">Hexo+Gitpage基础-搭建自己的博客</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-10T20:19:02+08:00">
+                2017-02-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在网上搜索很多博客框架，拖了很长时间。决定还是使用hexo来搭建，之前用过博客园和Wordpress框架都不错。各有千秋吧。使用hexo框架还是想学一下新的技术，选择Gitpage作为服务器后期搬到自己服务器上。作为个人博客不为了给别人看，最重要的是可以记录自己成长的每个脚印。</p>
+<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><h3 id="1-安装Node"><a href="#1-安装Node" class="headerlink" title="1.安装Node"></a>1.安装Node</h3><p>前往<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node官网</a>下载最新版本，一路安装就行。安装好了打开命令窗口 <code>node -v</code> 查看,这里我的版本是</p>
+<h3 id="2-安装Git"><a href="#2-安装Git" class="headerlink" title="2.安装Git"></a>2.安装Git</h3><p>前往<a href="https://www.git-scm.com/download/" target="_blank" rel="noopener">Git官网</a>选择对于的系统下载,我的使用的系统是Windows10.安装完成了在桌面上右键就能看到 Git bash 。这里还介绍一种:<a href="https://desktop.github.com/" target="_blank" rel="noopener">Github客户端</a>也可以使用，这里就不详细介绍了。<br><a href="https://www.cnblogs.com/liuleilei/p/6533177.html" target="_blank" rel="noopener">使用教程</a></p>
+<h2 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h2><h3 id="1-安装Hexo"><a href="#1-安装Hexo" class="headerlink" title="1.安装Hexo"></a>1.安装Hexo</h3><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo官方文档</a><br>在任意窗口下打开 git bash 运行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-初始化"><a href="#2-初始化" class="headerlink" title="2.初始化"></a>2.初始化</h3><p>在电脑的某个地方新建一个名为blog的文件夹（名字可以随便取），比如我的是D:\blog，由于这个文件夹将来就作为你存放代码的地方，所以最好不要随便放。<br>hexo会自动下载一些文件到这个目录，包括node_modules，目录结构如下图：<br><img src="http://oltmqb37p.bkt.clouddn.com/hexoimageflie.png" alt=""><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g # 生成</span><br><span class="line">$ hexo s # 启动服务</span><br><span class="line">命令解释：</span><br><span class="line">	* hexo generate（可简写为hexo g）</span><br><span class="line">	* hexo sever（可简写为hexo s）</span><br></pre></td></tr></table></figure></p>
+<p>打开浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可看到内容，很多人会碰到浏览器一直在转圈但是就是加载不出来的问题，一般情况下是因为端口占用的缘故，因为4000这个端口太常见了，解决端口冲突问题请参考这篇文章：<br><a href="http://blog.liuxianan.com/windows-port-bind.html" target="_blank" rel="noopener">Windows下如何查看某个端口被谁占用</a><br>第一次初始化的时候hexo已经帮我们写了一篇名为HelloWorld的文章，默认的主题比较丑。</p>
+<h3 id="3-部署到服务器"><a href="#3-部署到服务器" class="headerlink" title="3.部署到服务器"></a>3.部署到服务器</h3><h4 id="1-创建仓库"><a href="#1-创建仓库" class="headerlink" title="1.创建仓库"></a>1.创建仓库</h4><p>前往<a href="https://github.com/" target="_blank" rel="noopener">Github官网</a>注册账号。<br>打开你的存储库后点击 new 新建存储库<br><img src="http://oltmqb37p.bkt.clouddn.com/hexoimagegit1.png" alt=""><br><img src="http://oltmqb37p.bkt.clouddn.com/hexogit3.png" alt=""><br>新建一个名为你的用户名.github.io的仓库，比如说，如果你的github用户名是test，那么你就新建test.github.io的仓库（必须是你的用户名，其它名称无效），将来你的网站访问地址就是 <a href="http://test.github.io" target="_blank" rel="noopener">http://test.github.io</a> 了，是不是很方便？</p>
+<p>由此可见，每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。</p>
+<p>几个注意的地方：</p>
+<p><em>注册的邮箱一定要验证，否则不会成功；</em><br><em>仓库名字必须是：username.github.io，其中username是你的用户名；</em><br><em>仓库创建成功不会立即生效，需要过一段时间，大概10-30分钟，或者更久，我的等了半个小时才生效；</em><br><em>创建成功后，默认会在你这个仓库里生成一些示例页面，以后你的网站所有代码都是放在这个仓库里啦。</em></p>
+<h4 id="2-进入仓库的右上角的Setting里，找到这里，改为master分支："><a href="#2-进入仓库的右上角的Setting里，找到这里，改为master分支：" class="headerlink" title="2.进入仓库的右上角的Setting里，找到这里，改为master分支："></a>2.进入仓库的右上角的Setting里，找到这里，改为master分支：</h4><p><img src="http://oltmqb37p.bkt.clouddn.com/hexogit4.png" alt=""></p>
+<h4 id="3-然后先保存"><a href="#3-然后先保存" class="headerlink" title="3.然后先保存"></a>3.然后先保存</h4><p><img src="http://oltmqb37p.bkt.clouddn.com/hexogit5.png" alt=""></p>
+<h4 id="4-随便选择一个主题后退出来"><a href="#4-随便选择一个主题后退出来" class="headerlink" title="4.随便选择一个主题后退出来"></a>4.随便选择一个主题后退出来</h4><p><img src="http://oltmqb37p.bkt.clouddn.com/hexogit6.png" alt=""><br>多了一个文件，相当于是仓库默认首页index.html，之后我们把这个文件删了也没有影响，这一步主要是和github没更新以前的gh-pages分支的作用相同.<br><img src="http://oltmqb37p.bkt.clouddn.com/hexogit7.png" alt=""> </p>
+<h4 id="5-配置SSH-key"><a href="#5-配置SSH-key" class="headerlink" title="5.配置SSH key"></a>5.配置SSH key</h4><p>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/. ssh #检查本机已存在的ssh密钥</span><br></pre></td></tr></table></figure></p>
+<p>如果提示：No such file or directory 说明你是第一次使用git。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮件地址&quot;</span><br></pre></td></tr></table></figure></p>
+<p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：<br><img src="http://oltmqb37p.bkt.clouddn.com/hexogit8.png" alt=""><br>将刚复制的内容粘贴到key那里，title随便填，保存。</p>
+<h4 id="6-测试是否成功"><a href="#6-测试是否成功" class="headerlink" title="6.测试是否成功"></a>6.测试是否成功</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com # 注意邮箱地址不用改</span><br></pre></td></tr></table></figure>
+<p>如果提示<code>Are you sure you want to continue connecting (yes/no)?</code>，输入yes，然后会看到：<br>看到这个信息说明SSH已配置成功！</p>
+<p>此时你还需要配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;liuxianan&quot;// 你的github用户名，非昵称</span><br><span class="line">$ git config --global user.email  &quot;xxx@qq.com&quot;// 填写你的github注册邮箱</span><br></pre></td></tr></table></figure></p>
+<h4 id="6-开始部署到github-page提供的服务器"><a href="#6-开始部署到github-page提供的服务器" class="headerlink" title="6.开始部署到github page提供的服务器"></a>6.开始部署到github page提供的服务器</h4><p>步骤</p>
+<ul>
+<li>首先回到git shell按ctrl+c，之后输入y即可</li>
+<li>修改Hexo文件夹下_config.yml文件，如下图所示修改，repository后的地址要改成你自己的地址：deploy: type: github repo: <a href="https://github.com/yourname/blog.git" target="_blank" rel="noopener">https://github.com/yourname/blog.git</a></li>
+</ul>
+<p>继续回到git shell输入命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
+<p>命令解释:</p>
+<ul>
+<li>清除public，当 source 文件夹中的部分资源更改过之后，特别是对文件进行了删除或者路径的改变之后，需要执行这个命令，然后重新编译。<br>编译，一般部署上去的时候都需要编译一下，编译后，会出现一个 public 文件夹，将所有的md文件编译成html文件</li>
+<li>开启本地服务，</li>
+<li>部署博客到github上，如果一切顺利，你就通过访问usename.github.io访问你的博客了！<br>是的，现在你拥有了自己的博客！</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/blog/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/blog/">1</a><span class="page-number current">2</span>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/blog/images/find.png"
+                alt="Safran" />
+            
+              <p class="site-author-name" itemprop="name">Safran</p>
+              <p class="site-description motion-element" itemprop="description">前端程序猿的学习之旅，分享学习路上的坑。努力努力再努力！</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/blog/archives/">
+              
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/blog/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/blog/tags/index.html">
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Safran</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="#">Safran</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="#"></a> v5.1.4</div>
+
+
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+<script type="text/javascript" src="/js/src/love.js"></script>
